@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme',sans-serif;
+    
+}
+
+.main_page{
+    background-image: url("./img/ranch.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.9em;
+    color: #000000;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.navbar {
+    background: rgb(2, 80, 158);
+    color: #fff;
+    display: flex;
+    z-index: 1;
+    justify-content: flex-end;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.navbar_item {
+    padding-left: 2em;
+    padding-right: 1em;
+    font-size: 2em;
+    z-index: 10;
+    cursor: pointer;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: aqua;
+    transition: .5s;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 5em;
+    font-size: 25px;
+    overflow: auto;
+}
+
+.blog_div{
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+p{
+    padding: 1em;
+}
+
+.kontakt_div{
+    height: 1000px;
+}
+
+.gallery{
+    height: 1000px;
+}
+.image_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.image_gallery > li{
+    flex-basis: 350px;
+}
+.image_gallery li img{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.main_about{
+    height: 1000px;
+}
+#about_subtitle{
+    text-align: center;
+    padding-bottom: 1em;
+}
+/*Boilerplate Media queris*/
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+/* Styles */
+    
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+/* Styles */
+    .main{
+        padding-top: 17em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    body{
+        background-image: url("./img/ranch.jpg");
+        background-size: cover;
+        
+    }
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+    .main{
+        padding-top: 17em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    body{
+        background-image: url("./img/ranch.jpg");
+        background-size: cover;
+        background-repeat: re;
+    }
+    
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+    /* Styles */
+    .main{
+        padding-top: 17em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    body{
+        background-image: url("./img/ranch.jpg");
+        background-size: cover;
+        
+    }
+}
+
+@media only screen
+and (min-width : 1024px)
+and (max-width : 1224px) {
+    .main{
+        padding-top: 17em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    body{
+        background-image: url("./img/ranch.jpg");
+        background-size: cover;
+        
+    }
+}
+
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    /* Styles */
+    .main{
+        padding-top: 17em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+ 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
